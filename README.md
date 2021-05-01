@@ -1,5 +1,9 @@
 # SteamVR-Unity-Integration
 
+## Preview
+
+![gorillatag4](https://user-images.githubusercontent.com/33325442/116792025-2ff09d80-aab6-11eb-830e-1b7de7da7d90.gif)
+
 ## About
 This project is basically a system that allows a unity project to write pointer addresses to a SteamVR driver. This can be usefully because:
 - You can bypass Anti-Cheat on games because Anti-Cheat does not protect SteamVR itself.
