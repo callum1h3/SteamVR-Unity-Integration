@@ -16,6 +16,9 @@ This might be good for some people if you don't want to worry about having to by
 6. Load up SteamVR and it should be installed.
 7. Open the sample project in unity and run it. The sample project has code already for Gorilla Tag to test in.
 ## How to Code the Unity Project
-- The main file in the unity project is the VRManager. Without that the whole project can't send information to the driver so have the VRManager Mono Script loaded at all times in the scene.
-- You can use PointerNetwork.SetPointer<T>( string name, T val ) to manually set the pointers in the VR driver.
--
+The main file in the unity project is the VRManager. Without that the whole project can't send information to the driver so have the VRManager Mono Script loaded at all times in the scene.
+
+You can use PointerNetwork.SetPointer<T>( string name, T val ) to manually set the pointers in the VR driver. As a example:
+```c#
+  PointerNetwork.SetPointer<float>( "LHANDTRIGGER", 1 );
+```
