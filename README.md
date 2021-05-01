@@ -27,3 +27,49 @@ You can easily move your jointstick around in VR to make your character move wit
 ```c#
   PointerNetwork.SetJointStick( "LHAND", new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) );
 ```
+
+If you want a list of all pointers:
+```
+HMDPositionX - float
+HMDPositionY - float
+HMDPositionZ - float
+
+HMDRotationW - float
+HMDRotationX - float
+HMDRotationY - float
+HMDRotationZ - float
+
+LHANDPositionX - float
+LHANDPositionY - float
+LHANDPositionZ - float
+
+LHANDRotationW - float
+LHANDRotationX - float
+LHANDRotationY - float
+LHANDRotationZ - float
+
+LHANDAPP - int
+LHANDGRIP - int
+LHANDSYSTEM - int
+LHANDTRACKPAD - int
+LHANDTrackpadX - float
+LHANDTrackpadY - float
+LHANDTRIGGER - float
+
+RHANDPositionX - float
+RHANDPositionY - float
+RHANDPositionZ - float
+
+RHANDRotationW - float
+RHANDRotationX - float
+RHANDRotationY - float
+RHANDRotationZ - float
+
+RHANDAPP - int
+RHANDGRIP - int
+RHANDSYSTEM - int
+RHANDTRACKPAD - int
+RHANDTrackpadX - float
+RHANDTrackpadY - float
+RHANDTRIGGER - float
+```
