@@ -73,3 +73,4 @@ RHANDTrackpadX - float
 RHANDTrackpadY - float
 RHANDTRIGGER - float
 ```
+If you want to edit the rotation of the device it is important to use the unity quaternion object and pass all of the data from the object. However you can put the UnityToVR Mono Script on a gameobject and set the deviceID to one of the following: 'HMD', 'LHAND', 'RHAND'.
