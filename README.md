@@ -79,6 +79,7 @@ If you want to edit the rotation of the device it is important to use the unity 
 - SteamVR is booting up with a error message: This is because theres a error in the driver. What I used to debug is a log system to write to a file but you will have to manually go around deleting your code to find the issue.
 
 ## Extra
+- This project is half taken from https://github.com/r57zone/OpenVR-driver-for-DIY. Please see his project for the original project files. All what I did is modify the driver and interface it into Unity.
 - If you have any issues about the project just leave a issue in github, I will be waiting :)
 
 ## To Do
