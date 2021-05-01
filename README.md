@@ -11,6 +11,7 @@ This project is basically a system that allows a unity project to write pointer 
 - You can play VR games with mouse and keyboard and I have already demostrated this with Gorilla Tag and Pavlov VR.
 - You can create a kinda speed hack by setting the position of the camera.
 This might be good for some people if you don't want to worry about having to bypass the games Anti-Cheat. As for me I have no idea how to game hack so it was very helpful.
+- You will have a massive advantage if you code the cheat well for the game. For example in gorilla tag all of my movements are at 100% power and I can do crazy movements unlike VR players.
 ## Installation
 1. In order to install the drivers you will need to either build your version of the driver or download the driver from the releases tab in github. If your building your driver remember to rename the driver to driver_null
 2. Then with the driver navigate to steamVR and go to the null driver, this is where my null driver is located: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\null
