@@ -22,3 +22,8 @@ You can use PointerNetwork.SetPointer<T>( string name, T val ) to manually set t
 ```c#
   PointerNetwork.SetPointer<float>( "LHANDTRIGGER", 1 );
 ```
+
+You can easily move your jointstick around in VR to make your character move with this code:
+```c#
+  PointerNetwork.SetJointStick( "LHAND", new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) );
+```
