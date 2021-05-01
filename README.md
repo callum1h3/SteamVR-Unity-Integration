@@ -28,7 +28,7 @@ You can easily move your jointstick around in VR to make your character move wit
   PointerNetwork.SetJointStick( "LHAND", new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) );
 ```
 
-If you want a list of all pointers:
+You can edit pointers in the basics.h file in the driver project but if you want a list of all the default pointers here:
 ```
 HMDPositionX - float
 HMDPositionY - float
