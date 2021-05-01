@@ -74,3 +74,12 @@ RHANDTrackpadY - float
 RHANDTRIGGER - float
 ```
 If you want to edit the rotation of the device it is important to use the unity quaternion object and pass all of the data from the object. However you can put the UnityToVR Mono Script on a gameobject and set the deviceID to one of the following: 'HMD', 'LHAND', 'RHAND'.
+
+## Common Issues
+- SteamVR is booting up with a error message: This is because theres a error in the driver. What I used to debug is a log system to write to a file but you will have to manually go around deleting your code to find the issue.
+
+## Extra
+- If you have any issues about the project just leave a issue in github, I will be waiting :)
+
+## To Do
+- Complete Rewrite of the driver!
