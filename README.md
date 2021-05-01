@@ -8,7 +8,7 @@ This project is basically a system that allows a unity project to write pointer 
 - You can create a kinda speed hack by setting the position of the camera.
 This might be good for some people if you don't want to worry about having to bypass the games Anti-Cheat. As for me I have no idea how to game hack so it was very helpful.
 ## Installation
-1. In order to install the drivers you will need to either build your version of the driver or download the driver from the releases tab in github.
+1. In order to install the drivers you will need to either build your version of the driver or download the driver from the releases tab in github. If your building your driver remember to rename the driver to driver_null
 2. Then with the driver navigate to steamVR and go to the null driver, this is where my null driver is located: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\null
 3. Replace the original driver in null/bin/win64 with the driver you have downloaded or built.
 4. Go back to null/resources/settings and open the file in that folder with a text editor.
