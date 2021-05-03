@@ -12,14 +12,20 @@ This project is basically a system that allows a unity project to write pointer 
 - You can create a kinda speed hack by setting the position of the camera.
 This might be good for some people if you don't want to worry about having to bypass the games Anti-Cheat. As for me I have no idea how to game hack so it was very helpful.
 - You will have a massive advantage if you code the cheat well for the game. For example in gorilla tag all of my movements are at 100% power and I can do crazy movements unlike VR players.
-## Installation
+## Driver Installation
 1. In order to install the drivers you will need to either build your version of the driver or download the driver from the releases tab in github. If your building your driver remember to rename the driver to driver_null
 2. Then with the driver navigate to steamVR and go to the null driver, this is where my null driver is located: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\null
 3. Replace the original driver in null/bin/win64 with the driver you have downloaded or built.
 4. Go back to null/resources/settings and open the file in that folder with a text editor.
 5. Change the line "Enable" to 'true' to enable the device.
 6. Load up SteamVR and it should be installed.
-7. Open the sample project in unity and run it. The sample project has code already for Gorilla Tag to test in.
+## Unity Installation
+- Before doing the unity installation you must install the driver because without the driver unity cannot control steamvr and remember to load steamvr before unity
+- Download the git project and you can either use the example project in the git project or create your own
+- If your creating your own, you will need to import the package through the package manager like in this screenshot:
+
+![packagemanager](https://user-images.githubusercontent.com/33325442/116943408-720f1000-ac6b-11eb-9a01-a75d2c0ffa41.png)
+
 ## How to Code the Unity Project
 The main file in the unity project is the VRManager. Without that the whole project can't send information to the driver so have the VRManager Mono Script loaded at all times in the scene.
 
