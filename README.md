@@ -1,4 +1,5 @@
 # SteamVR-Unity-Integration
+A driver to allow communication between SteamVR and Unity
 
 ## Preview
 
