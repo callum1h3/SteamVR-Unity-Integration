@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.svrui": {
+      "version": "file:C:/Users/callu/Desktop/SteamVRUnityIntegration",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "1.3.9",
       "depth": 0,
