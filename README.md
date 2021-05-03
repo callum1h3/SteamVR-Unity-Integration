@@ -12,6 +12,8 @@ This project is basically a system that allows a unity project to write pointer 
 - You can create a kinda speed hack by setting the position of the camera.
 This might be good for some people if you don't want to worry about having to bypass the games Anti-Cheat. As for me I have no idea how to game hack so it was very helpful.
 - You will have a massive advantage if you code the cheat well for the game. For example in gorilla tag all of my movements are at 100% power and I can do crazy movements unlike VR players.
+## Why use Unity over coding straight in the driver?
+The reason why I picked unity is because when trying to debug problems in the driver it takes a long time because every single time you make a change to it you have to recompile the driver and drag it back into steamVR, with unity all what you have to do is just edit the changes and get information on whats happening instantly. Also you don't have to worry about doing quaternion math and just use inbuilt tools that unity already has.
 ## Driver Installation
 1. In order to install the drivers you will need to either build your version of the driver or download the driver from the releases tab in github. If your building your driver remember to rename the driver to driver_null
 2. Then with the driver navigate to steamVR and go to the null driver, this is where my null driver is located: C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\null
@@ -52,14 +54,14 @@ To send information such as position and angles to the device you will need to u
 
 Or you will need to set the pointers individualy like in this code snippet:
 ```c#
-    	PointerNetwork.SetPointer<float>("HMDPositionX", 0);
-    	PointerNetwork.SetPointer<float>("HMDPositionY", 0);
-    	PointerNetwork.SetPointer<float>("HMDPositionZ", 0);
+   PointerNetwork.SetPointer<float>("HMDPositionX", 0);
+   PointerNetwork.SetPointer<float>("HMDPositionY", 0);
+   PointerNetwork.SetPointer<float>("HMDPositionZ", 0);
 
-    	PointerNetwork.SetPointer<float>("HMDRotationW", 0);
-    	PointerNetwork.SetPointer<float>("HMDRotationX", 0);
-    	PointerNetwork.SetPointer<float>("HMDRotationY", 0);
-    	PointerNetwork.SetPointer<float>("HMDRotationZ", 0); 
+   PointerNetwork.SetPointer<float>("HMDRotationW", 0);
+   PointerNetwork.SetPointer<float>("HMDRotationX", 0);
+   PointerNetwork.SetPointer<float>("HMDRotationY", 0);
+   PointerNetwork.SetPointer<float>("HMDRotationZ", 0); 
 ```
 
 You can edit pointers in the basics.h file in the driver project but if you want a list of all the default pointers here:
