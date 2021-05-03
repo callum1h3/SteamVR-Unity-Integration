@@ -26,6 +26,9 @@ This might be good for some people if you don't want to worry about having to by
 
 ![packagemanager](https://user-images.githubusercontent.com/33325442/116943408-720f1000-ac6b-11eb-9a01-a75d2c0ffa41.png)
 
+- When you have the package installed in your unity client you will need to create a gameobject and attach the 'SVRUI Manager' script onto it. That will handle all of the pointer file loading for you. And thats it, your unity project has installed the communication between unity and the driver!
+
+
 ## How to Code the Unity Project
 The main file in the unity project is the VRManager. Without that the whole project can't send information to the driver so have the VRManager Mono Script loaded at all times in the scene.
 
@@ -33,10 +36,30 @@ You can use PointerNetwork.SetPointer<T>( string name, T val ) to manually set t
 ```c#
   PointerNetwork.SetPointer<float>( "LHANDTRIGGER", 1 );
 ```
+  
+Another example is the ability to press the system Button on the controller with this piece of code:
+```c#
+  PointerNetwork.SetPointer<int>( "LHANDSYSTEM", 1 );
+```
 
 You can easily move your jointstick around in VR to make your character move with this code:
 ```c#
   PointerNetwork.SetJointStick( "LHAND", new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) );
+```
+
+To send information such as position and angles to the device you will need to use either the 'UnityToVR' mono like in this screenshot:
+![hmd](https://user-images.githubusercontent.com/33325442/116943892-55bfa300-ac6c-11eb-8184-ab53699a9195.png)
+
+Or you will need to set the pointers individualy like in this code snippet:
+```c#
+    	PointerNetwork.SetPointer<float>("HMDPositionX", 0);
+    	PointerNetwork.SetPointer<float>("HMDPositionY", 0);
+    	PointerNetwork.SetPointer<float>("HMDPositionZ", 0);
+
+    	PointerNetwork.SetPointer<float>("HMDRotationW", 0);
+    	PointerNetwork.SetPointer<float>("HMDRotationX", 0);
+    	PointerNetwork.SetPointer<float>("HMDRotationY", 0);
+    	PointerNetwork.SetPointer<float>("HMDRotationZ", 0); 
 ```
 
 You can edit pointers in the basics.h file in the driver project but if you want a list of all the default pointers here:
